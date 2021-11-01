@@ -1,0 +1,25 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%
+}
+.navbar {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  z-index: 10;
+  background-color: #f0f0f0;
+}
+.nav-home, .nav-menu, .nav-events, .nav-about, .nav-contact {
+  float: left;
+  display: block;
+  font-size: 1em;
+  overflow: hidden;
+  text-align: center;
+  padding: 0em 2em;
+}
+div.content, div.footer {
+  position: relative;
+  top: 8em;
+}
