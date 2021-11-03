@@ -3,6 +3,9 @@
   font-weight: normal;
   font-size: 100%
 }
+body, html, .content {
+  height: 100%;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -33,7 +36,6 @@ ul {
 }
 div.content, div.footer {
   position: relative;
-  top: 8em;
 }
 h1{
   color: black;
@@ -42,6 +44,7 @@ h1{
   border: 10px solid #178fd6;
   border-radius: 15px;
   text-align: center;
+  background-color: #ffffff;
 }
 #apply{
   color: #034488;
@@ -54,4 +57,18 @@ h1{
   background-color: #ccdde8;
   border-color: #034488;
   border-style: solid;
+}
+.falcon-parallax {
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(181,181,181,0.6)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .falcon-parallax {
+    background-attachment: scroll;
+  }
 }
