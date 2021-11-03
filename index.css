@@ -1,6 +1,5 @@
 * {
   font-family: 'Blippo', fantasy;
-  text-decoration: none;
   font-weight: normal;
   font-size: 100%
 }
@@ -11,14 +10,15 @@
   z-index: 10;
   background-color: #034488;
 }
-.nav-home, .nav-menu, .nav-events, .nav-about, .nav-contact {
+.nav-home, .nav-menu, .nav-events, .nav-about, .nav-sponsor, .nav-contact {
   float: left;
   display: block;
-  font-size: 1em;
+  font-size: 16px;
   overflow: hidden;
   text-align: center;
   padding: 14px;
   color: #ffffff;
+  text-decoration: none;
 }
 div.content, div.footer {
   position: relative;
