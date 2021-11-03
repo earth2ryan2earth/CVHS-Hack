@@ -3,6 +3,12 @@
   font-weight: normal;
   font-size: 100%
 }
+ul {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  overflow: hidden;
+}
 .navbar {
   position: fixed;
   overflow: hidden;
@@ -10,13 +16,13 @@
   z-index: 10;
   background-color: #034488;
 }
-.nav-home, .nav-menu, .nav-events, .nav-about, .nav-sponsor, .nav-contact {
+.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors {
   float: left;
   display: block;
-  font-size: 16px;
   overflow: hidden;
+  font-size: 16px;
   text-align: center;
-  padding: 14px;
+  padding: 16px;
   color: #ffffff;
   text-decoration: none;
 }
