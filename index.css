@@ -1,5 +1,5 @@
 * {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Blippo', fantasy;
   text-decoration: none;
   font-weight: normal;
   font-size: 100%
@@ -9,7 +9,7 @@
   overflow: hidden;
   width: 100%;
   z-index: 10;
-  background-color: #f0f0f0;
+  background-color: #ccdde8;
 }
 .nav-home, .nav-menu, .nav-events, .nav-about, .nav-contact {
   float: left;
