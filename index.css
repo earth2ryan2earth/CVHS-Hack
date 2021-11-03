@@ -7,7 +7,7 @@
   position: fixed;
   overflow: hidden;
   width: 100%;
-  z-index: 10;
+  z-index: 7;
   background-color: #034488;
 }
 .nav-home, .nav-menu, .nav-events, .nav-about, .nav-sponsor, .nav-contact {
