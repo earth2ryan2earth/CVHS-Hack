@@ -35,7 +35,7 @@ ul {
 .navbar li:hover, .navbar a:hover {
   background-color: #ccdde8;
 }
-div.wrap-title, div.footer {
+div.wrap-title {
   position: relative;
   top: 3em;
 }
@@ -44,7 +44,7 @@ h1{
   font-size: 700%;
   margin: 50px;
   border: 10px solid #178fd6;
-  border-radius: 15px;
+  border-radius: 1em;
   background-color: #edece8;
 }
 #apply{
@@ -58,6 +58,7 @@ h1{
 #apply:hover {
   background-color: #ccdde8;
   border-color: #034488;
+  border-radius: 0.5em;
 }
 .title {
   text-align: center;
