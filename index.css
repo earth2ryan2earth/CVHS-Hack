@@ -3,7 +3,6 @@
   font-weight: normal;
   font-size: 100%
 }
-<<<<<<< Updated upstream
 body, html, .content, .falcon-parallax {
   height: 100%;
   margin: 0;
@@ -12,12 +11,6 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-=======
-ul {
-  list-style-type: none;
-  margin: none;
-  padding: none;
->>>>>>> Stashed changes
   overflow: hidden;
 }
 .navbar {
@@ -33,15 +26,9 @@ ul {
   float: left;
   display: block;
   overflow: hidden;
-<<<<<<< Updated upstream
   font-size: 1em;
   text-align: center;
   padding: 1em;
-=======
-  font-size: 16px;
-  text-align: center;
-  padding: 16px;
->>>>>>> Stashed changes
   color: #ffffff;
   text-decoration: none;
 }
