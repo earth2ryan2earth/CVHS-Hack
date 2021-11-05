@@ -35,8 +35,9 @@ ul {
 .navbar li:hover, .navbar a:hover {
   background-color: #ccdde8;
 }
-div.content, div.footer {
+div.wrap-title, div.footer {
   position: relative;
+  top: 10em;
 }
 h1{
   color: black;
@@ -44,20 +45,22 @@ h1{
   margin: 50px;
   border: 10px solid #178fd6;
   border-radius: 15px;
-  text-align: center;
-  background-color: #ffffff;
+  background-color: #edece8;
 }
 #apply{
   color: #034488;
   font-size: 300%;
   margin: 20px;
-  border: 5px dotted #edece8;
   text-align: center;
+  border: 5px solid transparent;
+  background-color: transparent;
 }
 #apply:hover {
   background-color: #ccdde8;
   border-color: #034488;
-  border-style: solid;
+}
+.title {
+  text-align: center;
 }
 .falcon-parallax {
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
@@ -73,6 +76,6 @@ h1{
     background-attachment: scroll;
   }
 }
-.falcon-parallax .wrapper {
+.falcon-parallax .wrap-title {
   margin: 1em;
 }
