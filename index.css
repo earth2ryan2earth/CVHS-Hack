@@ -60,7 +60,7 @@ h1{
   border-style: solid;
 }
 .falcon-parallax {
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(181,181,181,0.6)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
