@@ -15,6 +15,11 @@
         <li><a class="nav-info" href="#info">Info</a></li>
         <li><a class="nav-about" href="#about">About</a></li>
         <li><a class="nav-sponsors" href=Sponsors.html>Sponsors</a></li>
+        <li><p id="datetime">Date/Time: <span id="datetime"></span> </p></li>
+        <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
       </ul>
     </div><!--.navbar-->
     <div class="content">
