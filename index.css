@@ -35,7 +35,7 @@ ul {
 .navbar li:hover, .navbar a:hover {
   background-color: #ccdde8;
 }
-div.wrap-title, div.footer {
+div.wrap-title {
   position: relative;
   top: 3em;
 }
@@ -44,7 +44,7 @@ h1{
   font-size: 700%;
   margin: 50px;
   border: 10px solid #178fd6;
-  border-radius: 15px;
+  border-radius: 1em;
   background-color: #edece8;
 }
 #apply{
@@ -58,13 +58,14 @@ h1{
 #apply:hover {
   background-color: #ccdde8;
   border-color: #034488;
+  border-radius: 0.5em;
 }
 .title {
   text-align: center;
 }
 .falcon-parallax {
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
-  height: 100%;
+  height: 120%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
