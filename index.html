@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CVHS Hack</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -15,11 +16,8 @@
         <li><a class="nav-info" href="#info">Info</a></li>
         <li><a class="nav-about" href="#about">About</a></li>
         <li><a class="nav-sponsors" href=Sponsors.html>Sponsors</a></li>
-        <li><p id="datetime">Date/Time: <span id="datetime"></span> </p></li>
-        <script>
-          var dt = new Date();
-          document.getElementById("datetime").innerHTML = dt.toLocaleString();
-        </script>
+        <li><p class="datetime">Time:</p></li>
+        <script src="js/datetime.js"></script>
       </ul>
     </div><!--.navbar-->
     <div class="content">

@@ -22,7 +22,7 @@ ul {
   z-index: 10;
   background-color: #034488;
 }
-.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors {
+.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors, .datetime {
   float: left;
   display: block;
   overflow: hidden;
@@ -31,6 +31,9 @@ ul {
   padding: 1em;
   color: #ffffff;
   text-decoration: none;
+}
+.datetime {
+  padding: 0em 1em;
 }
 .navbar li:hover, .navbar a:hover {
   background-color: #ccdde8;
