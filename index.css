@@ -33,6 +33,9 @@ ul {
   text-decoration: none;
 }
 .datetime {
+  color: #000000;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
   padding: 0em 1em;
 }
 .navbar li:hover, .navbar a:hover {
