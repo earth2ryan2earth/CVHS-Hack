@@ -22,7 +22,7 @@ ul {
   z-index: 10;
   background-color: #034488;
 }
-.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors {
+.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors, .datetime {
   float: left;
   display: block;
   overflow: hidden;
@@ -31,6 +31,12 @@ ul {
   padding: 1em;
   color: #ffffff;
   text-decoration: none;
+}
+.datetime {
+  color: #000000;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding: 0em 1em;
 }
 .navbar li:hover, .navbar a:hover {
   background-color: #ccdde8;
@@ -70,7 +76,7 @@ h1{
   margin-bottom: 500px;
 }
 .falcon-parallax {
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("https://dw3jhbqsbya58.cloudfront.net/fit-in/1024x1024/school-mascot/9/1/2/912a3f21-2d9d-4c3c-8156-9c059c90f8c9.gif?version=636551121600000000");
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("images/falcon.gif");
   height: 120%;
   background-attachment: fixed;
   background-position: center;
