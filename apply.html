@@ -7,65 +7,61 @@
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
-	<script>
-		function saveData() {
-		 document.cookie="fname="+document.getElementById('fname').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="lname="+document.getElementById('lname').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="email="+document.getElementById('email').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="s/o="+document.getElementById('s/o').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 
-	 
-		 var radios = document.getElementsByName('events');
-	 
-		 for (var i = 0, length = radios.length; i < length; i++) {
-			 if (radios[i].checked) {
-					 document.cookie="events="+radios[i].value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
-					 break;
-			 }
-	 }
-		alert('Data Saved!');
-	 }
-		alert('SAVED DATA: '+document.cookie);
-	 </script>
 
 	<body>
 		<div class="navbar">
-			<ul>
-			  <li><a class="nav-home" id="top" href="#top">Home</a></li>
-			  <li><a class="nav-apply" href=apply.html>Apply</a></li>
-			  <li><a class="nav-info" href="#info">Info</a></li>
-			  <li><a class="nav-about" href="#about">About</a></li>
-			  <li><a class="nav-sponsors" href=Sponsors.html>Sponsors</a></li>
-			  <li><p class="datetime">DD Month YYYY HH:MM:SS</p></li>
-			  <script src="js/datetime.js"></script>
-			</ul>
-		</div><!--.navbar-->
-		<h1 id="apply2" style="text-align: center">Apply</h1>
-		<p> Fill out the information below to sign up for a Hackathon!</p>
-		<form action="javascript:saveData()">
-
-			<label for="fname">First Name:</label><br>
-			<input type="text" id="fname" name="fname"><br>
-
-			<label for="lname">Last Name:</label><br>
-			<input type="text" id="lname" name="lname"><br>
-
-			<label for="email">Email:</label><br>
-			<input type="text" id="email" name="email"><br>
-
-			<label for="s/o">School or Organization:</label><br>
-			<input type="text" id="s/o" name="s/o"><br>
-
-			<p>Please select the event you would like to attend:</p>
-			<input type="radio" id="event1" name="events" value="Event #1">
-			<label for="event1">Event #1</label><br>
-			<input type="radio" id="event2" name="events" value="Event #2">
-			<label for="event2">Event #2</label><br>  
-			<input type="radio" id="event3" name="events" value="Event #3">
-			<label for="event3">Event #3</label><br><br>
-
-			<input type="submit" value="Submit">
-		</form>
+      <ul>
+        <li><a class="nav-btn nav-home active" href="index.html">Home</a></li>
+        <li><a class="nav-btn nav-apply" id="top" href="#top">Apply</a></li>
+        <li><a class="nav-btn nav-info" href="index.html#info">Info</a></li>
+        <li><a class="nav-btn nav-about" href="index.html#about">About</a></li>
+        <li><a class="nav-btn nav-sponsors" href="Sponsors.html">Sponsors</a></li>
+        <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
+        <script src="js/datetime.js"></script>
+        <script src="js/activeClass.js"></script>
+      </ul>
+    </div><!--.navbar-->
 		
+		<div class="page-content">
+			<div class="falcon-parallax">
+				<h1 class="title">Apply</h1>
+				<p> Fill out the information below to sign up for a Hackathon!</p>
+				<form action="javascript:saveData()">
+
+					<label for="fname">First Name:</label><br>
+					<input type="text" class="fname" name="fname"><br>
+
+					<label for="lname">Last Name:</label><br>
+					<input type="text" class="lname" name="lname"><br>
+
+					<label for="email">Email:</label><br>
+					<input type="text" class="email" name="email"><br>
+
+					<label for="org">School or Organization:</label><br>
+					<input type="text" class="org" name="org"><br>
+
+					<p>Please select the event you would like to attend:</p>
+					<input type="radio" class="event1" name="events" value="Event #1">
+					<label for="event1">Event #1</label><br>
+					<input type="radio" class="event2" name="events" value="Event #2">
+					<label for="event2">Event #2</label><br>  
+					<input type="radio" class="event3" name="events" value="Event #3">
+					<label for="event3">Event #3</label><br><br>
+
+					<input class="submit" type="submit" value="Submit">
+				</form>
+			</div><!--.falcon-parallax-->
+		</div><!--.page-content-->
+
+		<script>
+			$(".submit").click(function() {
+				var fname = $(".fname").val();
+				var lname = $(".lname").val();
+				var email = $(".email").val();
+				var org = $(".org").val();
+				var radio = $("input[type=radio]:checked").val();
+				alert("SAVED DATA: " + fname + ", " + lname + ", " + email + ", " + org + ", " + radio);
+			});
+		</script>
 	</body>
 </html>
