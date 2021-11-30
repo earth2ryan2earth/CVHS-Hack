@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<style>
-
-	</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CVHS Hack</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<script>
 		function saveData() {
@@ -27,7 +29,18 @@
 	 </script>
 
 	<body>
-		<h1> Apply</h1>
+		<div class="navbar">
+			<ul>
+			  <li><a class="nav-home" id="top" href="#top">Home</a></li>
+			  <li><a class="nav-apply" href=apply.html>Apply</a></li>
+			  <li><a class="nav-info" href="#info">Info</a></li>
+			  <li><a class="nav-about" href="#about">About</a></li>
+			  <li><a class="nav-sponsors" href=Sponsors.html>Sponsors</a></li>
+			  <li><p class="datetime">DD Month YYYY HH:MM:SS</p></li>
+			  <script src="js/datetime.js"></script>
+			</ul>
+		</div><!--.navbar-->
+		<h1 id="apply2" style="text-align: center">Apply</h1>
 		<p> Fill out the information below to sign up for a Hackathon!</p>
 		<form action="javascript:saveData()">
 
