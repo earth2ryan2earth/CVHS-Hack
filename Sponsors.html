@@ -1,72 +1,94 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		h1{
-			font-size: 40px;
-			color:#034488;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		h2{
-			font-size: 30px;
-			color:#034488;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		p {
-			font-size: 20px;
-			color:#178fd6;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CVHS Hack - Apply</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<style>
+			:root {
+				--light-blue: #ccdde8;
+				--dark-blue: #034488;
+				--pastel-blue: #3273a8;
+			}
+			h1{
+				font-size: 40px;
+				color:#034488;
+				text-align: left;
+				font-family: Georgia, serif;
+			}
+			h2{
+				font-size: 30px;
+				color:#034488;
+				text-align: left;
+				font-family: Georgia, serif;
+			}
+			p {
+				font-size: 20px;
+				color:#178fd6;
+				text-align: left;
+				font-family: Georgia, serif;
+			}
+			ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
 
-		}
-		.navbar {
-			top: 0;
-			left: 0;
-			position: fixed;
-			overflow: hidden;
-			width: 100%;
-			z-index: 10;
-			background-color: #034488;
-			font-family: 'Blippo', fantasy;
-			font-weight: normal;
-			font-size: 100%;
-		}
-		.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors {
-			float: left;
-			display: block;
-			overflow: hidden;
-			font-size: 1em;
-			text-align: center;
-			padding: 1em;
-			color: #ffffff;
-			text-decoration: none;
-		}
-		.navbar li:hover, .navbar a:hover {
-			background-color: #ccdde8;
-		}
-		.content {
-			position: relative;
-			top: 2em;
-		}
-	</style>
+			}
+			/* Navbar */
+			.navbar {
+				top: 0;
+				left: 0;
+				position: fixed;
+				overflow: hidden;
+				width: 100%;
+				z-index: 10;
+				background-color: var(--dark-blue);
+			}
+			.nav-btn, .nav-el {
+				float: left;
+				display: block;
+				overflow: hidden;
+				font-size: 1em;
+				padding: 1em;
+				color: #ffffff;
+				text-decoration: none;
+			}
+			.datetime {
+				color: #000000;
+				font-family:'Courier New', Courier, monospace;
+				font-weight: bold;
+				padding: 0em 1em;
+			}
+			.active {
+				background-color: var(--pastel-blue);
+			}
+			.navbar li:hover, .navbar a:hover {
+				background-color: var(--light-blue);
+			}
+			.content {
+				position: relative;
+				top: 2em;
+			}
+		</style>
+	</head>
 
 	<body>
 		<div class="navbar">
-			<ul>
-				<li><a class="nav-home" id="top" href="index.html">Home</a></li>
-				<li><a class="nav-apply" href=apply.html>Apply</a></li>
-				<li><a class="nav-info" href="#info">Info</a></li>
-				<li><a class="nav-about" href="#about">About</a></li>
-				<li><a class="nav-sponsors" href="#sponsors">Sponsors</a></li>
-			</ul>
-		</div><!--.navbar-->
+      <ul>
+        <li><a class="nav-btn nav-home" href="index.html">Home</a></li>
+        <li><a class="nav-btn nav-apply" href=apply.html>Apply</a></li>
+        <li><a class="nav-btn nav-info" href="index.html#info">Info</a></li>
+        <li><a class="nav-btn nav-about" href="index.html#about">About</a></li>
+        <li><a class="nav-btn nav-sponsors active" id="top" href="#top">Sponsors</a></li>
+        <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
+        <script src="js/datetime.js"></script>
+        <script src="js/activeClass.js"></script>
+      </ul>
+    </div><!--.navbar-->
+
 		<div class="content">
 			<h1 id=sponsors>Sponsors</h1>
 			<a href="https://www.w3schools.com" target="_blank">
