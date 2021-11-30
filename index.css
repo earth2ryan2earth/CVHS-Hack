@@ -1,9 +1,14 @@
+/* Full page definitions */
+:root {
+  --light-pastel-blue: #ccdde8;
+  --dark-blue: #034488;
+}
 * {
   font-family: 'Blippo', fantasy;
   font-weight: normal;
   font-size: 100%;
 }
-body, html, .content, .falcon-parallax {
+body, html, .page-content, .falcon-parallax {
   height: 100%;
   margin: 0;
 }
@@ -13,6 +18,12 @@ ul {
   padding: 0;
   overflow: hidden;
 }
+body {
+  text-align: center;
+}
+
+/* Page-Content */
+/* Navbar */
 .navbar {
   top: 0;
   left: 0;
@@ -20,14 +31,13 @@ ul {
   overflow: hidden;
   width: 100%;
   z-index: 10;
-  background-color: #034488;
+  background-color: var(--dark-blue);
 }
-.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors, .datetime {
+.nav-el {
   float: left;
   display: block;
   overflow: hidden;
   font-size: 1em;
-  text-align: center;
   padding: 1em;
   color: #ffffff;
   text-decoration: none;
@@ -39,13 +49,15 @@ ul {
   padding: 0em 1em;
 }
 .navbar li:hover, .navbar a:hover {
-  background-color: #ccdde8;
+  background-color: var(--light-pastel-blue);
 }
-div.wrap-title {
+
+/* Header */
+.header {
   position: relative;
   top: 9em;
 }
-h1{
+.title{
   color: black;
   font-size: 700%;
   margin: 50px;
@@ -53,31 +65,21 @@ h1{
   border-radius: 1em;
   background-color: #edece8;
 }
-#apply{
-  color: #034488;
+.apply{
+  color: var(--dark-blue);
   font-size: 300%;
   margin: 20px;
-  text-align: center;
   border: 5px solid transparent;
   background-color: transparent;
 }
-#apply:hover {
-  background-color: #ccdde8;
-  border-color: #034488;
+.apply:hover {
+  background-color: var(--light-pastel-blue);
+  border-color: var(--dark-blue);
   border-radius: 0.5em;
-}
-.title {
-  text-align: center;
-}
-#wrap-title {
-  margin-top: 100px;
-}
-#pic {
-  margin-bottom: 500px;
 }
 .falcon-parallax {
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("images/falcon.gif");
-  height: 120%;
+  height: 140%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,6 +91,15 @@ h1{
     background-attachment: scroll;
   }
 }
-.falcon-parallax .wrap-title {
-  margin: 1em;
+
+/* Content */
+.content {
+  position: relative;
+  top: -1em;
+  height: 50%;
+  background-color: var(--light-pastel-blue);
+}
+.content #info, .content #about {
+  position: relative;
+  top: 2em;
 }
