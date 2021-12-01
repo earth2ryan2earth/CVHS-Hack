@@ -9,18 +9,16 @@
   font-weight: normal;
   font-size: 100%;
 }
-body, html, .page-content, .falcon-parallax {
+html, body, .page-content {
   height: 100%;
   margin: 0;
+  text-align: center;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-body {
-  text-align: center;
 }
 
 /* Page-Content */
@@ -96,7 +94,7 @@ body {
   }
 }
 
-/* Content */
+/* Content Section */
 .content {
   position: relative;
   top: -1em;
@@ -106,4 +104,23 @@ body {
 .content #info, .content #about {
   position: relative;
   top: 2em;
+}
+
+/* Sponsor Page */
+.sponsors-content {
+  position: relative;
+  height: 275%;
+  background-color: var(--light-blue);
+}
+.sponsor {
+  font-size: 1.875em;
+  color:var(--dark-blue);
+  text-align: center;
+  font-family: Georgia, serif;
+}
+.sponsor-about {
+  font-size: 1.25em;
+  color:#178fd6;
+  text-align: center;
+  font-family: Georgia, serif;
 }
