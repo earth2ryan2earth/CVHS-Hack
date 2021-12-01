@@ -3,11 +3,12 @@
   --light-blue: #ccdde8;
   --dark-blue: #034488;
   --pastel-blue: #3273a8;
+  --bright-blue: #178fd6;
 }
 * {
   font-family: 'Blippo', fantasy;
   font-weight: normal;
-  font-size: 100%;
+  font-size: 100%; /* 1em = 16px */
 }
 html, body, .page-content {
   height: 100%;
@@ -62,16 +63,16 @@ ul {
 .title{
   color: black;
   font-size: 700%;
-  margin: 50px;
-  border: 10px solid #178fd6;
+  margin: 3.125em;
+  border: 0.625em solid var(--bright-blue);
   border-radius: 1em;
   background-color: #edece8;
 }
 .apply{
   color: var(--dark-blue);
   font-size: 300%;
-  margin: 20px;
-  border: 5px solid transparent;
+  margin: 1.25em;
+  border: 0.3125em solid transparent;
   background-color: transparent;
 }
 .apply:hover {
@@ -120,7 +121,7 @@ ul {
 }
 .sponsor-about {
   font-size: 1.25em;
-  color:#178fd6;
+  color:var(--bright-blue);
   text-align: center;
   font-family: Georgia, serif;
 }
