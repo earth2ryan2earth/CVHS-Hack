@@ -61,7 +61,7 @@ a {
 /* Header */
 .header {
   position: relative;
-  top: 9em;
+  top: 3em;
 }
 .title{
   color: black;
@@ -85,7 +85,7 @@ a {
 }
 .falcon-parallax {
   background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("images/falcon.gif");
-  height: 140%;
+  height: 125%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,13 +101,13 @@ a {
 /* Content Section */
 .content {
   position: relative;
-  top: -1em;
+  top: -2em;
   height: 50%;
   background-color: var(--light-blue);
 }
 .content #info, .content #about {
   position: relative;
-  top: 2em;
+  top: 4em;
 }
 
 /* Sponsor Page */
@@ -116,7 +116,7 @@ a {
   height: 275%;
   background-color: var(--light-blue);
 }
-.sponsor {
+.sponsor, .subtitle {
   font-size: 1.875em;
   color:var(--dark-blue);
   text-align: center;
