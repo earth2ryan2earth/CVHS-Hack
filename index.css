@@ -118,9 +118,15 @@ a {
 }
 .sponsor, .subtitle {
   font-size: 1.875em;
-  color:var(--dark-blue);
+  color: var(--dark-blue);
   text-align: center;
   font-family: Georgia, serif;
+}
+.event-date, .event-location {
+  font-size: 1.2em;
+  color: var(--dark-blue);
+  text-align: center;
+  font-family: Garamond, serif;
 }
 .sponsor-about {
   font-size: 1.25em;
