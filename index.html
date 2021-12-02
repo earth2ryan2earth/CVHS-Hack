@@ -11,10 +11,10 @@
   <body>
     <div class="navbar">
       <ul>
-        <li><a class="nav-btn nav-home active" id="top" href="#top">Home</a></li>
+        <li><a class="nav-btn nav-home active" data-navtag="top" href="#top">Home</a></li>
         <li><a class="nav-btn nav-apply" href=apply.html>Apply</a></li>
-        <li><a class="nav-btn nav-info" href="#info">Info</a></li>
-        <li><a class="nav-btn nav-about" href="#about">About</a></li>
+        <li><a class="nav-btn nav-info" data-navtag="info" href="#info">Info</a></li>
+        <li><a class="nav-btn nav-about" data-navtag="about" href="#about">About</a></li>
         <li><a class="nav-btn nav-sponsors" href=Sponsors.html>Sponsors</a></li>
         <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
         <script src="js/datetime.js"></script>
@@ -22,7 +22,7 @@
       </ul>
     </div><!--.navbar-->
 
-    <div class="page-content">
+    <div id="top" class="page-content">
       <div class="falcon-parallax">
         <div class="header">
           <h1 class="title">CVHS Hack</h1>
