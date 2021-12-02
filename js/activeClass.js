@@ -16,7 +16,3 @@ $(window).scroll(function() {
     $(".nav-about").addClass("active");
   }
 });
-
-$(document).ready(function() {
-  $(".content #info, .content #about").css("scroll-margin-top", $(".navbar").outerHeight(true) );
-});
