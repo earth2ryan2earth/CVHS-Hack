@@ -3,7 +3,7 @@ $(".nav-home, .nav-info, .nav-about").click(function() {
 });
 
 $(window).scroll(function() {
-  if ($(this).scrollTop() < $("#info").offset().top - $(".navbar").outerHeight(true) - 1 ){
+  if ($(this).scrollTop() < $("#info").offset().top - $(".navbar").outerHeight(true) - 1    ){
     $(".navbar a.active").removeClass("active");
     $(".nav-home").addClass("active");
   }
