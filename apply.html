@@ -5,31 +5,11 @@
 
 	</style>
 	</head>
-	<script>
-		function saveData() {
-		 document.cookie="fname="+document.getElementById('fname').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="lname="+document.getElementById('lname').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="email="+document.getElementById('email').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 document.cookie="s/o="+document.getElementById('s/o').value+"; expires=Sat, 18 Dec 2021 12:00:00 UTC";
-		 
-	 
-		 var radios = document.getElementsByName('events');
-	 
-		 for (var i = 0, length = radios.length; i < length; i++) {
-			 if (radios[i].checked) {
-					 document.cookie="events="+radios[i].value+"; expires=Thu, 18 Dec 2019 12:00:00 UTC";
-					 break;
-			 }
-	 }
-		alert('Data Saved!');
-	 }
-		alert('SAVED DATA: '+document.cookie);
-	 </script>
 
 	<body>
 		<h1> Apply</h1>
 		<p> Fill out the information below to sign up for a Hackathon!</p>
-		<form action="javascript:saveData()">
+		<form action="action_page.php">
 
 			<label for="fname">First Name:</label><br>
 			<input type="text" id="fname" name="fname"><br>
