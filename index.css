@@ -10,7 +10,7 @@
   --bright-blue: #297BE6;
 
   /* New Adobe Colors */
-  
+
 }
 * {
   font-family: 'Blippo', fantasy;
@@ -30,7 +30,7 @@ ul {
   padding: 0;
   overflow: hidden;
 }
-a {
+a, .sponsor {
   text-decoration: none;
   cursor: pointer;
 }
