@@ -3,7 +3,7 @@
   /* From Adobe Color */
   --light-blue: #9FD0FC;
   --dark-blue: #216CFC;
-  --pastel-blue: #297BE6;
+  --pastel-blue: #2a508c;
   --soft-blue: #55B8F5;
   --matte-blue: #7695F5;
   /* Sponsors Color */
@@ -13,7 +13,7 @@
 
 }
 * {
-  font-family: 'Blippo', fantasy;
+  font-family: 'Poiret One', cursive;
   font-weight: normal;
   font-size: 100%;
   user-select: none;
@@ -65,7 +65,7 @@ a, .sponsor {
   background-color: var(--pastel-blue);
 }
 .navbar li:hover, .navbar a:hover {
-  background-color: var(--light-blue);
+  background-color: var(--pastel-blue);
 }
 
 /* Header */
@@ -75,11 +75,12 @@ a, .sponsor {
 }
 .title{
   color: black;
+  font-weight: bold;
   font-size: 700%;
   margin: 50px;
-  border: 10px solid var(--soft-blue);
+  /* border: 10px solid var(--soft-blue);
   border-radius: 1em;
-  background-color: #edece8;
+  background-color: #edece8; */
 }
 .apply{
   color: var(--dark-blue);
@@ -134,7 +135,7 @@ a, .sponsor {
 }
 .event-date, .event-location {
   font-size: 1.2em;
-  color: var(--dark-blue);
+  color: #b8cfff;
   text-align: center;
   font-family: Garamond, serif;
 }
