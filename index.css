@@ -1,11 +1,23 @@
+/* Full page definitions */
+:root {
+  /* From Adobe Color */
+  --light-blue: #ccdde8;
+  --dark-blue: #034488;
+  --pastel-blue: #3273a8;
+  --soft-blue: #3088BF;
+  --matte-blue: #4B95B8;
+  /* Sponsors Color */
+  --bright-blue: #178fd6;
+}
 * {
   font-family: 'Blippo', fantasy;
   font-weight: normal;
   font-size: 100%;
 }
-body, html, .content, .falcon-parallax {
+html, body, .page-content {
   height: 100%;
   margin: 0;
+  text-align: center;
 }
 ul {
   list-style-type: none;
@@ -13,6 +25,12 @@ ul {
   padding: 0;
   overflow: hidden;
 }
+a {
+  text-decoration: none;
+}
+
+/* Page-Content */
+/* Navbar */
 .navbar {
   top: 0;
   left: 0;
@@ -20,14 +38,13 @@ ul {
   overflow: hidden;
   width: 100%;
   z-index: 10;
-  background-color: #034488;
+  background-color: var(--dark-blue);
 }
-.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors, .datetime {
+.nav-btn, .nav-el {
   float: left;
   display: block;
   overflow: hidden;
   font-size: 1em;
-  text-align: center;
   padding: 1em;
   color: #ffffff;
   text-decoration: none;
@@ -38,48 +55,42 @@ ul {
   font-weight: bold;
   padding: 0em 1em;
 }
+.active {
+  background-color: var(--pastel-blue);
+}
 .navbar li:hover, .navbar a:hover {
-  background-color: #ccdde8;
+  background-color: var(--light-blue);
 }
-div.wrap-title {
+
+/* Header */
+.header {
   position: relative;
-  top: 9em;
+  top: 24em;
 }
-h1{
+.title{
   color: black;
   font-size: 700%;
   margin: 50px;
-  border: 10px solid #178fd6;
+  border: 10px solid var(--soft-blue);
   border-radius: 1em;
   background-color: #edece8;
 }
-#apply{
-  color: #034488;
+.apply{
+  color: var(--dark-blue);
   font-size: 300%;
   margin: 20px;
-  text-align: center;
   border: 5px solid transparent;
   background-color: transparent;
 }
-#apply:hover {
-  background-color: #ccdde8;
-  border-color: #034488;
+.apply:hover {
+  background-color: var(--light-blue);
+  border-color: var(--dark-blue);
   border-radius: 0.5em;
 }
-.title {
-  text-align: center;
-}
-#wrap-title {
-  margin-top: 100px;
-}
-#pic {
-  margin-bottom: 500px;
-}
 .falcon-parallax {
-  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("images/falcon.gif");
-  height: 120%;
+  background-image: linear-gradient(rgba(255,255,255,0.6), rgba(150,150,150,0.8)), url("https://www.crescentavalleyweekly.com/wp-content/uploads/2019/12/NO-1-WEB-2.jpg");
+  height: 125%;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,6 +100,40 @@ h1{
     background-attachment: scroll;
   }
 }
-.falcon-parallax .wrap-title {
-  margin: 1em;
+
+/* Content Section */
+.content {
+  position: relative;
+  top: -2em;
+  height: 250%;
+  background-color: var(--light-blue);
+}
+.content #info, .content #about {
+  position: relative;
+  top: 4em;
+}
+
+/* Sponsor Page */
+.sponsors-content {
+  position: relative;
+  height: 275%;
+  background-color: var(--light-blue);
+}
+.sponsor, .subtitle {
+  font-size: 1.875em;
+  color: var(--dark-blue);
+  text-align: center;
+  font-family: Georgia, serif;
+}
+.event-date, .event-location {
+  font-size: 1.2em;
+  color: var(--dark-blue);
+  text-align: center;
+  font-family: Garamond, serif;
+}
+.sponsor-about {
+  font-size: 1.25em;
+  color: var(--bright-blue);
+  text-align: center;
+  font-family: Georgia, serif;
 }
