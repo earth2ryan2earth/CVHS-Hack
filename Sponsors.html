@@ -1,94 +1,46 @@
 <!DOCTYPE html>
 <html>
-	<style>
-		h1{
-			font-size: 40px;
-			color:#034488;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		h2{
-			font-size: 30px;
-			color:#034488;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		p {
-			font-size: 20px;
-			color:#178fd6;
-			text-align: left;
-			font-family: Georgia, serif;
-		}
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			overflow: hidden;
-
-		}
-		.navbar {
-			top: 0;
-			left: 0;
-			position: fixed;
-			overflow: hidden;
-			width: 100%;
-			z-index: 10;
-			background-color: #034488;
-			font-family: 'Blippo', fantasy;
-			font-weight: normal;
-			font-size: 100%;
-		}
-		.nav-home, .nav-apply, .nav-info, .nav-about, .nav-sponsors {
-			float: left;
-			display: block;
-			overflow: hidden;
-			font-size: 1em;
-			text-align: center;
-			padding: 1em;
-			color: #ffffff;
-			text-decoration: none;
-		}
-		.navbar li:hover, .navbar a:hover {
-			background-color: #ccdde8;
-		}
-		.content {
-			position: relative;
-			top: 2em;
-		}
-	</style>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CVHS Hack - Apply</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
 
 	<body>
 		<div class="navbar">
-			<ul>
-				<li><a class="nav-home" id="top" href="index.html">Home</a></li>
-				<li><a class="nav-apply" href=https://forms.gle/g6NbX3Hcbjqxc9G1A>Apply</a></li>
-				<li><a class="nav-info" href="#info">Info</a></li>
-				<li><a class="nav-about" href="#about">About</a></li>
-				<li><a class="nav-sponsors" href="#sponsors">Sponsors</a></li>
-			</ul>
-		</div><!--.navbar-->
-		<div class="content">
-			<h1 id=sponsors>Sponsors</h1>
-			<a href="https://www.w3schools.com" target="_blank">
-			<h2>Sponsor #1</h2>
-			</a>
+      <ul>
+        <li><a class="nav-btn nav-home" href="index.html">Home</a></li>
+        <li><a class="nav-btn nav-apply" href=apply.html>Apply</a></li>
+        <li><a class="nav-btn nav-info" href="index.html#info">Info</a></li>
+        <li><a class="nav-btn nav-about" href="index.html#about">About</a></li>
+        <li><a class="nav-btn nav-sponsors active" id="top" href="#top">Sponsors</a></li>
+        <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
+        <script src="js/datetime.js"></script>
+        <script src="js/activeClass.js"></script>
+      </ul>
+    </div><!--.navbar-->
+
+		<div class="sponsors-content">
+			<h1 class="title">Sponsors</h1>
+
+			<a href="https://www.w3schools.com" target="_blank"><h2 class="sponsor">Sponsor #1</h2></a>			
 			<img src="images/Daniel.jpg">
-			<p> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
-			<a href="https://www.w3schools.com" target="_blank">
-			<h2>Sponsor #2</h2>
-			</a>
+			<p class="sponsor-about"> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
+			
+			<a href="https://www.w3schools.com" target="_blank"><h2 class="sponsor">Sponsor #2</h2></a>			
 			<img src="images/Daniel.jpg">
-			<p> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
-			<a href="https://www.w3schools.com" target="_blank">
-			<h2>Sponsor #3</h2>
-			</a>
+			<p class="sponsor-about"> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
+
+			<a href="https://www.w3schools.com" target="_blank"><h2 class="sponsor">Sponsor #3</h2></a>			
 			<img src="images/Daniel.jpg">
-			<p> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
-			<a href="https://www.w3schools.com" target="_blank">
-			<h2>Sponsor #4</h2>
-			</a>
+			<p class="sponsor-about"> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
+
+			<a href="https://www.w3schools.com" target="_blank"><h2 class="sponsor">Sponsor #4</h2></a>			
 			<img src="images/Daniel.jpg">
-			<p> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
-			</div><!--.content-->
+			<p class="sponsor-about"> We are really happy to have this sponsor. Blah blah blah blah blah blah blah blah blah</p>
+
+		</div><!--.sponsors-content-->
 	</body>
 </html>
