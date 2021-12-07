@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<style>
-
-	</style>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CVHS Hack - Apply</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 
 	<body>
+<<<<<<< HEAD
 		<h1> Apply</h1>
 		<p> Fill out the information below to sign up for a Hackathon!</p>
 		<form action="action_page.php">
@@ -33,6 +36,52 @@
 
 			<input type="submit" value="Submit">
 		</form>
+=======
+		<div class="navbar">
+      <ul>
+        <li><a class="nav-btn nav-home" href="index.html">Home</a></li>
+        <li><a class="nav-btn nav-apply active" id="top" href="#top">Apply</a></li>
+        <li><a class="nav-btn nav-info" href="index.html#info">Info</a></li>
+        <li><a class="nav-btn nav-about" href="index.html#about">About</a></li>
+        <li><a class="nav-btn nav-sponsors" href="Sponsors.html">Sponsors</a></li>
+        <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
+        <script src="js/datetime.js"></script>
+        <script src="js/activeClass.js"></script>
+      </ul>
+    </div><!--.navbar-->
+>>>>>>> 143cbb3dfb259ff776d5412ceea574bdda2afc57
 		
+		<div class="page-content">
+			<div class="falcon-parallax">
+				<h1 class="title">Apply</h1>
+				<p> Fill out the information below to sign up for a Hackathon!</p>
+				<form action="javascript:saveData()">
+
+					<label for="fname">First Name:</label><br>
+					<input type="text" class="fname" name="fname"><br>
+
+					<label for="lname">Last Name:</label><br>
+					<input type="text" class="lname" name="lname"><br>
+
+					<label for="email">Email:</label><br>
+					<input type="text" class="email" name="email"><br>
+
+					<label for="org">School or Organization:</label><br>
+					<input type="text" class="org" name="org"><br>
+
+					<p>Please select the event you would like to attend:</p>
+					<input type="radio" class="event1" name="events" value="Event #1">
+					<label for="event1">Event #1</label><br>
+					<input type="radio" class="event2" name="events" value="Event #2">
+					<label for="event2">Event #2</label><br>  
+					<input type="radio" class="event3" name="events" value="Event #3">
+					<label for="event3">Event #3</label><br><br>
+
+					<input class="submit" type="submit" value="Submit">
+				</form>
+			</div><!--.falcon-parallax-->
+		</div><!--.page-content-->
+
+		<script src="js/applySubmit.js"></script>
 	</body>
 </html>
