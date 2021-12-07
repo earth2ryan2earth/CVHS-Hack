@@ -4,44 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CVHS Hack</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer type="text/javascript" src="js/adjustHeight.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="navbar">
       <ul>
-        <li><a class="nav-home" id="top" href="#top">Home</a></li>
-        <li><a class="nav-apply" href=apply.html>Apply</a></li>
-        <li><a class="nav-info" href="#info">Info</a></li>
-        <li><a class="nav-about" href="#about">About</a></li>
-        <li><a class="nav-sponsors" href=Sponsors.html>Sponsors</a></li>
-        <li><p class="datetime">DD Month YYYY HH:MM:SS</p></li>
+        <li><a class="nav-btn nav-home active" data-navtag="top" href="#top">Home</a></li>
+        <li><a class="nav-btn nav-apply" href=apply.html>Apply</a></li>
+        <li><a class="nav-btn nav-info" data-navtag="info" href="#info">Info</a></li>
+        <li><a class="nav-btn nav-about" data-navtag="about" href="#about">About</a></li>
+        <li><a class="nav-btn nav-sponsors" href=Sponsors.html>Sponsors</a></li>
+        <li><p class="nav-el datetime">DD Month YYYY HH:MM:SS</p></li>
         <script src="js/datetime.js"></script>
+        <script src="js/activeClass.js"></script>
       </ul>
     </div><!--.navbar-->
-    <div class="content">
-      <div class="title falcon-parallax">
-        <div class="wrap-title">
-          <h1>CVHS Hack</h1>
-          <div id = "pic">
-            <img src="https://www.crescentavalleyweekly.com/wp-content/uploads/2020/03/IMG_4600-WEB.jpg" alt = "robotics team">
-            </div>    
-          <form method="get" target="_blank">
-            <button id=apply type="submit" formaction="https://forms.gle/g6NbX3Hcbjqxc9G1A">Apply</button>
-          </form>
-          <p id="date">TBD</p>
-          <p id="location">Crescenta Valley High School</p>
-        </div><!--.wrap-title-->
-      </div><!--.title .falcon-parallax-->
-      <div class="wrap-content">
-        <div id="info">
 
+    <div id="top" class="page-content">
+      <div class="falcon-parallax">
+        <div class="header">
+          <h1 class="title">CVHS Hack</h1>
+          <!-- <div class="pic">
+            <img src="https://www.crescentavalleyweekly.com/wp-content/uploads/2020/03/IMG_4600-WEB.jpg" alt = "robotics team">
+          </div> -->
+          <form method="get" target="_blank">
+            <button class=apply type="submit" formaction="apply.html">Apply</button>
+          </form>
+          <p class="event-date">TBD</p>
+          <p class="event-location">Crescenta Valley High School</p>
+        </div><!--.header-->
+      </div><!--.falcon-parallax-->
+
+      <div class="content">
+        <div id="info">
+          <h2 class="subtitle">Event Information</h2>
+          <p>[Event Information]</p>
         </div><!--#info-->
         <div id="about">
-
+          <h2 class="subtitle">About CVHS Hack</h2>
+          <p>[About CVHS Hack]</p>
         </div><!--#about-->
-      </div><!--.wrap-content-->
-    </div>
+      </div><!--.content-->
+    </div><!--.page-content-->
   </body>
 </html>
