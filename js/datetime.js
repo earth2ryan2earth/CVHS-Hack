@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // 24 hour clock
   setInterval(function() {
-
+    // var nextEvent = "\t\tNext Event: Christmas";
     var currentTime = new Date();
     var year = currentTime.getFullYear();
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -18,8 +18,8 @@ $(document).ready(function() {
     seconds = (seconds < 10 ? "0" : "") + seconds;
 
     // Compose the string for display
-    var currentTimeString = day + " " + " " + month + " " + year + " " + hours + ":" + minutes + ":" + seconds;
-    $(".datetime").html(currentTimeString);
+    var currentTimeString = `${day} ${month} ${year} ${hours}:${minutes}:${seconds}`;
+    $(".datetime").html(currentTimeString /* + nextEvent */ );
 
   }, 1000);
 });

@@ -6,14 +6,29 @@
   --pastel-blue: #297BE6;
   --soft-blue: #6592DB;
   --matte-blue: #BCCBE3;
+
+  /* --light-blue: #9FD0FC;
+  --dark-blue: #216CFC;
+  --pastel-blue: #2a508c;
+  --soft-blue: #55B8F5;
+  --soft-blue: #BCCBE3;
+  --matte-blue: #7695F5; */
+
   /* Sponsors Color */
   --bright-blue: #BCCBE3;
+
+  /* --bright-blue: #425F8F;
+  --bright-blue: #297BE6; */
 
   /* New Adobe Colors */
 
 }
+/* @font-face {
+  font-family: "Poiret One";
+  src: url("")
+} */
 * {
-  font-family: 'Blippo', fantasy;
+  font-family: 'Poiret One', cursive;
   font-weight: normal;
   font-size: 100%;
   user-select: none;
@@ -75,11 +90,12 @@ a, .sponsor {
 }
 .title{
   color: black;
+  font-weight: bold;
   font-size: 700%;
   margin: 50px;
-  border: 10px solid var(--soft-blue);
+  /* border: 10px solid var(--soft-blue);
   border-radius: 1em;
-  background-color: #edece8;
+  background-color: #edece8; */
 }
 .apply{
   color: var(--dark-blue);
@@ -134,7 +150,7 @@ a, .sponsor {
 }
 .event-date, .event-location {
   font-size: 1.2em;
-  color: var(--dark-blue);
+  color: #555555;;
   text-align: center;
   font-family: Garamond, serif;
 }
