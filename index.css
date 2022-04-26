@@ -39,6 +39,9 @@ html, body, .page-content {
   margin: 0;
   text-align: center;
 }
+.page-content {
+  overflow-x: scroll;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -56,10 +59,19 @@ a, .sponsor {
   top: 0;
   left: 0;
   position: fixed;
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   z-index: 10;
   background-color: var(--dark-blue);
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.navbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .nav-btn, .nav-el {
   float: left;
